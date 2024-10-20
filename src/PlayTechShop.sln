@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTechShop.Domain", "PlayTechShop.Domain\PlayTechShop.Domain.csproj", "{D10B80C4-CBD0-44D8-8093-E4D8DC3C56CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D10B80C4-CBD0-44D8-8093-E4D8DC3C56CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10B80C4-CBD0-44D8-8093-E4D8DC3C56CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10B80C4-CBD0-44D8-8093-E4D8DC3C56CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10B80C4-CBD0-44D8-8093-E4D8DC3C56CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD581D55-6B33-4525-A43A-3E257EA40633}
+	EndGlobalSection
+EndGlobal
