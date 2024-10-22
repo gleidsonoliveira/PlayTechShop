@@ -4,3 +4,12 @@
 
 /.vs/PlayTechShop2024/v17
 /src/.vs/PlayTechShop
+/src/.vs/ProjectEvaluation
+/.vs
+/src/PlayTechShop.Domain/obj/Debug/net8.0/PlayTechShop.Domain.AssemblyInfo.cs
+/src/PlayTechShop.Domain/obj/Debug/net8.0/PlayTechShop.Domain.AssemblyInfoInputs.cache
+/src/PlayTechShop.Domain/obj/Debug/net8.0/PlayTechShop.Domain.assets.cache
+/src/PlayTechShop.Domain/obj/Debug/net8.0/PlayTechShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/src/PlayTechShop.Domain/obj/PlayTechShop.Domain.csproj.nuget.dgspec.json
+/src/PlayTechShop.Domain/obj/project.assets.json
+/src/PlayTechShop.Domain/obj/project.nuget.cache
