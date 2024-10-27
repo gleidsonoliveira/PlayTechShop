@@ -10,7 +10,7 @@ public class CityRepository : BaseRepository<City>, ICityRepository
     {
     }
 
-    public Task<ICollection<City>> GetAllCities()
+    public Task<ICollection<City>> GetAllCitiesofStateId(long StateId)
     {
         throw new NotImplementedException();
     }

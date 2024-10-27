@@ -16,3 +16,6 @@
 /src/PlayTechShop.Data/obj
 /src/PlayTechShop.Domain/bin/Debug/net8.0
 /src/PlayTechShop.Domain/obj/Debug/net8.0
+/src/PlayTechShop.Data/bin/Debug/net8.0
+/src/PlayTechShop.Service/bin/Debug/net8.0
+/src/PlayTechShop.Service/obj
