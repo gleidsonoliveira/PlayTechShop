@@ -13,3 +13,6 @@
 /src/PlayTechShop.Domain/obj/PlayTechShop.Domain.csproj.nuget.dgspec.json
 /src/PlayTechShop.Domain/obj/project.assets.json
 /src/PlayTechShop.Domain/obj/project.nuget.cache
+/src/PlayTechShop.Data/obj
+/src/PlayTechShop.Domain/bin/Debug/net8.0
+/src/PlayTechShop.Domain/obj/Debug/net8.0

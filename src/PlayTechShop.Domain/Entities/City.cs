@@ -1,4 +1,6 @@
 ﻿using PlayTechShop.Domain.Entities.Base;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PlayTechShop.Domain.Entities;
 

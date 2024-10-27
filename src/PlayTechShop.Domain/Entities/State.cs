@@ -7,6 +7,7 @@ namespace PlayTechShop.Domain.Entities;
 public class State : EntityBase
 {
     public string Name { get; set; }
+    public string Uf { get; set; }
 
     public virtual ICollection<City> Cities { get; set; }
 }
