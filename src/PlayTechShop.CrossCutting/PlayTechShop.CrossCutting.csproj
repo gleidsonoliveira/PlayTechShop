@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlayTechShop.Data\PlayTechShop.Data.csproj" />
+    <ProjectReference Include="..\PlayTechShop.Domain\PlayTechShop.Domain.csproj" />
+    <ProjectReference Include="..\PlayTechShop.Service\PlayTechShop.Service.csproj" />
+  </ItemGroup>
+
+  
 </Project>
