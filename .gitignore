@@ -19,3 +19,5 @@
 /src/PlayTechShop.Data/bin/Debug/net8.0
 /src/PlayTechShop.Service/bin/Debug/net8.0
 /src/PlayTechShop.Service/obj
+/src/PlayTechShop.CrossCutting/obj/Debug/net8.0
+/src/PlayTechShop.CrossCutting/obj
