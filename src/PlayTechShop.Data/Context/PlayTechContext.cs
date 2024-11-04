@@ -16,7 +16,7 @@ public class PlayTechContext : DbContext
     public DbSet<Client> Client { get; set; }
     public DbSet<Company> Company { get; set; }
     public DbSet<Employee> Employee { get; set; }
-    public DbSet<Stoke> Stoke { get; set; }
+    public DbSet<Inventory> Stoke { get; set; }
     public DbSet<Wage> Wage { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

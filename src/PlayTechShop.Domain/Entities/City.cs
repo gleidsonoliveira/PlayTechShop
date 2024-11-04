@@ -1,6 +1,4 @@
 ﻿using PlayTechShop.Domain.Entities.Base;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PlayTechShop.Domain.Entities;
 
@@ -14,6 +12,9 @@ public class City : EntityBase
 
     //Relacionamento.
     public virtual ICollection<Client> Clients { get; set; }
+    public virtual ICollection<Company> Companies { get; set; }
+    public virtual ICollection<Employee> Employees { get; set; }
+
     public long StateId { get; set; }
     public State State { get; set; }
 }

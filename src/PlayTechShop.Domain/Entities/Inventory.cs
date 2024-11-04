@@ -5,7 +5,7 @@ namespace PlayTechShop.Domain.Entities;
 /// <summary>
 /// Estoque
 /// </summary>
-public class Stoke : EntityBase
+public class Inventory : EntityBase
 {
     public string Description { get; set; }
     /// <summary>
