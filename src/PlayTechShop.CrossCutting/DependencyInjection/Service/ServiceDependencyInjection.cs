@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using PlayTechShop.Data.Repository;
+using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
 using PlayTechShop.Service.Services;
 
@@ -10,7 +12,8 @@ public static class ServiceDependencyInjection
         return new ServiceCollection()
             .AddScoped<ICityService, CityService>()
             .AddScoped<ICompanyService, CompanyService>()
-            .AddScoped<IInventoryService, InventoryService>();
+            .AddScoped<IInventoryService, InventoryService>()
+             .AddScoped<IClientService, ClientService>();
 
 
         //.AddScoped<IStateService, StateService>();

@@ -21,3 +21,6 @@
 /src/PlayTechShop.Service/obj
 /src/PlayTechShop.CrossCutting/obj/Debug/net8.0
 /src/PlayTechShop.CrossCutting/obj
+/src/PlayTechShop.Shared/obj/Debug/net8.0
+/src/PlayTechShop.Shared/obj
+/src/PlayTechShop.WebApi/obj
