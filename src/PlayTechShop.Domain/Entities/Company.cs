@@ -21,11 +21,11 @@ namespace PlayTechShop.Domain.Entities
         /// <summary>
         /// Endereço
         /// </summary>
-        public string Adress { get; set; }
+        public string Address { get; set; }
         /// <summary>
         /// Bairro
         /// </summary>
-        public string AdressNeighborhood { get; set; }
+        public string AddressNeighborhood { get; set; }
         /// <summary>
         /// Número
         /// </summary>
@@ -33,7 +33,12 @@ namespace PlayTechShop.Domain.Entities
         /// <summary>
         /// Complemento
         /// </summary>
-        public string Complement { get; set; }
+        public string AddressComplement { get; set; }
+        /// <summary>
+        /// CEP
+        /// </summary>
+        public string AddressZipCode { get; set; }
+
         /// <summary>
         /// Telefone
         /// </summary>
@@ -61,6 +66,8 @@ namespace PlayTechShop.Domain.Entities
         //public virtual ICollection<Employee> Clients { get; set; }
 
         public City City { get; set; }
+        public long CityId { get; set; }
+
 
     }
 }

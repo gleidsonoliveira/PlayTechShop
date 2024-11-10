@@ -14,6 +14,7 @@ public class City : EntityBase
 
     //Relacionamento.
     public virtual ICollection<Client> Clients { get; set; }
+    public virtual ICollection<Company> Companies { get; set; }
     public long StateId { get; set; }
     public State State { get; set; }
 }

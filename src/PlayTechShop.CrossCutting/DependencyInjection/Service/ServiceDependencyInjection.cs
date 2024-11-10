@@ -8,7 +8,11 @@ public static class ServiceDependencyInjection
     public static IServiceCollection AddServiceDependency()
     {
         return new ServiceCollection()
-            .AddScoped<ICityService, CityService>();
+            .AddScoped<ICityService, CityService>()
+            .AddScoped<ICompanyService, CompanyService>()
+            .AddScoped<IStokeService, StokeService>();
+
+
         //.AddScoped<IStateService, StateService>();
     }
 }

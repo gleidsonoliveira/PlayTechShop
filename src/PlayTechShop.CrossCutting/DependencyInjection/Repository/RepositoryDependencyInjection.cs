@@ -8,7 +8,11 @@ public static class RepositoryDependencyInjection
     public static IServiceCollection AddSqlRepositorydependency()
     {
         return new ServiceCollection()
-            .AddScoped<ICityRepository, CityRepository>();
+            .AddScoped<ICityRepository, CityRepository>()
+            .AddScoped<ICompanyRepository, CompanyRepository>()
+            .AddScoped<IStokeRepository, StokeRepository>();
+
         //.AddScoped<IStateRepository, StateRepository>();
+
     }
 }
