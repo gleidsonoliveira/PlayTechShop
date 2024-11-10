@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PlayTechShop.Domain\PlayTechShop.Domain.csproj" />
-    <ProjectReference Include="..\PlayTechShop.Shared\PlayTechShop.Shared.csproj" />
-  </ItemGroup>
-
 </Project>

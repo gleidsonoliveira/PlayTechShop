@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayTechShop.Service", "Pla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTechShop.CrossCutting", "PlayTechShop.CrossCutting\PlayTechShop.CrossCutting.csproj", "{0E123BB7-3EEE-40C9-AF09-342A5D430629}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTechShop.WebApi", "PlayTechShop.WebApi\PlayTechShop.WebApi.csproj", "{83C7AEFD-C683-485C-9A8F-47FA25CC8D65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTechShop.Shared", "PlayTechShop.Shared\PlayTechShop.Shared.csproj", "{A13B3FC3-27B1-4FA4-9C5F-4BC07C252FC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{0E123BB7-3EEE-40C9-AF09-342A5D430629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E123BB7-3EEE-40C9-AF09-342A5D430629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E123BB7-3EEE-40C9-AF09-342A5D430629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C7AEFD-C683-485C-9A8F-47FA25CC8D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C7AEFD-C683-485C-9A8F-47FA25CC8D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C7AEFD-C683-485C-9A8F-47FA25CC8D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C7AEFD-C683-485C-9A8F-47FA25CC8D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13B3FC3-27B1-4FA4-9C5F-4BC07C252FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13B3FC3-27B1-4FA4-9C5F-4BC07C252FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13B3FC3-27B1-4FA4-9C5F-4BC07C252FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13B3FC3-27B1-4FA4-9C5F-4BC07C252FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
