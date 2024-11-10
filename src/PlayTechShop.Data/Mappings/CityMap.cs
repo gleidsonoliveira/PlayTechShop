@@ -14,7 +14,7 @@ public class CityMap : IEntityTypeConfiguration<City>
     {
         builder.ToTable("City");
         builder.HasKey(c => c.Id);
-        builder.Property(c => c.Name).IsRequired().HasMaxLength(100);
+        builder.Property(c => c.Name).HasMaxLength(100).IsRequired();
 
         #region Default
         builder.Property(u => u.DateCreated);
@@ -32,5 +32,6 @@ public class CityMap : IEntityTypeConfiguration<City>
 
         builder.HasOne(c => c.State).WithMany(s => s.Cities).HasForeignKey(c => c.StateId);
 
+        builder.HasMany(c => c.Clients).WithOne(s => s.City).HasForeignKey(c => c.CityId);
     }
 }
