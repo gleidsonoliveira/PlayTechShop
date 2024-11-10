@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace PlayTechShop.Domain.Interface.Repository
 {
-    public interface IStokeRepository : IRepositoryBase<Stoke>
+    public interface IInventoryRepository : IRepositoryBase<Inventory>
     {
-        Task<ICollection<Stoke>> GetAllStokeOfId(long StokeId);
+        Task<ICollection<Inventory>> GetAllInventoryOfId(long InventoryId);
     }
 }

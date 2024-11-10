@@ -10,55 +10,55 @@ using System.Threading.Tasks;
 
 namespace PlayTechShop.Service.Services
 {
-    public class StokeService : IStokeService
+    public class InventoryService : IInventoryService
     {
-        private readonly IStokeRepository _repository;
-        public StokeService(IStokeRepository repository)
+        private readonly IInventoryRepository _repository;
+        public InventoryService(IInventoryRepository repository)
         {
             _repository = repository;
         }
 
-        public async Task<Stoke> AddAsync(Stoke entity)
+        public async Task<Inventory> AddAsync(Inventory entity)
         {
             return await _repository.AddAsync(entity);
         }
 
-        public async Task AddRangeAsync(IList<Stoke> entity)
+        public async Task AddRangeAsync(IList<Inventory> entity)
         {
             await _repository.AddRangeAsync(entity);
         }
 
-        public async Task<Stoke> DeleteAsync(Stoke entity)
+        public async Task<Inventory> DeleteAsync(Inventory entity)
         {
             return await _repository.DeleteAsync(entity);
         }
 
-        public async Task<Stoke> DeleteAsync(long Id)
+        public async Task<Inventory> DeleteAsync(long Id)
         {
             return await _repository.DeleteAsync(Id);
         }
 
-        public async Task<IEnumerable<Stoke>> GetAllAsync(Expression<Func<Stoke, bool>> predicate)
+        public async Task<IEnumerable<Inventory>> GetAllAsync(Expression<Func<Inventory, bool>> predicate)
         {
             return await _repository.GetAllAsync(predicate);
         }
 
-        public async Task<Stoke> GetAsync(Expression<Func<Stoke, bool>> predicate)
+        public async Task<Inventory> GetAsync(Expression<Func<Inventory, bool>> predicate)
         {
             return await _repository.GetAsync(predicate);
         }
 
-        public async Task<Stoke> GetByIdAsync(long Id)
+        public async Task<Inventory> GetByIdAsync(long Id)
         {
             return await _repository.GetByIdAsync(Id);
         }
 
-        public async Task<Stoke> UpdateAsync(Stoke entity)
+        public async Task<Inventory> UpdateAsync(Inventory entity)
         {
             return await _repository.UpdateAsync(entity);
         }
 
-        public async Task UpdateRangeAsync(IEnumerable<Stoke> entity)
+        public async Task UpdateRangeAsync(IEnumerable<Inventory> entity)
         {
             await _repository.UpdateRangeAsync(entity);
         }

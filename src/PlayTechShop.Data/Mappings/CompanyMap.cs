@@ -13,6 +13,7 @@ public class CompanyMap : IEntityTypeConfiguration<Company>
     public void Configure(EntityTypeBuilder<Company> builder)
     {
         #region Default
+
         builder.Property(u => u.DateCreated);
         builder.Property(u => u.UserIdCreated).HasMaxLength(50);
 
@@ -43,7 +44,7 @@ public class CompanyMap : IEntityTypeConfiguration<Company>
         builder.Property(u => u.NumberOfEmployees).IsRequired().HasMaxLength(20);
         builder.Property(u => u.Observation).HasMaxLength(100);
 
-        builder.HasOne(c => c.City).WithMany(s => s.Companies).HasForeignKey(c => c.CityId);
 
     }
 }
+

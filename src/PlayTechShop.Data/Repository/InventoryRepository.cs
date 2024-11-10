@@ -4,13 +4,13 @@ using PlayTechShop.Domain.Entities;
 using PlayTechShop.Domain.Interface.Repository;
 
 namespace PlayTechShop.Data.Repository;
-public class StokeRepository : BaseRepository<Stoke>, IStokeRepository
+public class InventoryRepository : BaseRepository<Inventory>, IInventoryRepository
 {
-    public StokeRepository(PlayTechContext pPlayTechContext) : base(pPlayTechContext)
+    public InventoryRepository(PlayTechContext pPlayTechContext) : base(pPlayTechContext)
     {
     }
 
-    public Task<ICollection<Stoke>> GetAllStokeOfId(long StokeId)
+    public Task<ICollection<Inventory>> GetAllInventoryOfId(long InventoryId)
     {
         throw new NotImplementedException();
     }

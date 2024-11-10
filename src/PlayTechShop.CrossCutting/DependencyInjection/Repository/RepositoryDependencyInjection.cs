@@ -10,7 +10,7 @@ public static class RepositoryDependencyInjection
         return new ServiceCollection()
             .AddScoped<ICityRepository, CityRepository>()
             .AddScoped<ICompanyRepository, CompanyRepository>()
-            .AddScoped<IStokeRepository, StokeRepository>();
+            .AddScoped<IInventoryRepository, InventoryRepository>();
 
         //.AddScoped<IStateRepository, StateRepository>();
 

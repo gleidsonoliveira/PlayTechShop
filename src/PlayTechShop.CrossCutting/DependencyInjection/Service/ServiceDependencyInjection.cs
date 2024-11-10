@@ -10,7 +10,7 @@ public static class ServiceDependencyInjection
         return new ServiceCollection()
             .AddScoped<ICityService, CityService>()
             .AddScoped<ICompanyService, CompanyService>()
-            .AddScoped<IStokeService, StokeService>();
+            .AddScoped<IInventoryService, InventoryService>();
 
 
         //.AddScoped<IStateService, StateService>();

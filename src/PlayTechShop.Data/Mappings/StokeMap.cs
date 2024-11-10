@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PlayTechShop.Data.Mappings;
-public class StokeMap : IEntityTypeConfiguration<Stoke>
+public class StokeMap : IEntityTypeConfiguration<Inventory>
 {
-    public void Configure(EntityTypeBuilder<Stoke> builder)
+    public void Configure(EntityTypeBuilder<Inventory> builder)
     {
         #region Default
         builder.Property(u => u.DateCreated);
@@ -26,7 +26,7 @@ public class StokeMap : IEntityTypeConfiguration<Stoke>
         builder.Property(u => u.Situation).IsRequired().HasDefaultValueSql("1");
         #endregion
 
-        builder.ToTable("Stoke");
+        builder.ToTable("Inventory");
         builder.HasKey(c => c.Id);
         builder.Property(c => c.Description).IsRequired().HasMaxLength(100);
         builder.Property(u => u.Weight).IsRequired().HasMaxLength(20);
