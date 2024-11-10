@@ -1,12 +1,7 @@
 ﻿using PlayTechShop.Domain.Entities;
 using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlayTechShop.Service.Services
 {
