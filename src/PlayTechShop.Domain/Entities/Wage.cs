@@ -22,5 +22,5 @@ public class Wage : EntityBase
     /// Relacionamento entre Wage e Employee
     /// </summary>
     public long EmployeeId { get; set; }
-    public Employee Employe { get; set; }
+    public Employee Employee { get; set; }
 }
