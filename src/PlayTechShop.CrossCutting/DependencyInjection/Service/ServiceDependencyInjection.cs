@@ -1,13 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using PlayTechShop.Data.Repository;
-using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
 using PlayTechShop.Service.Services;
 
 namespace PlayTechShop.CrossCutting.DependencyInjection.Service;
 public static class ServiceDependencyInjection
 {
-    public static IServiceCollection AddServiceDependency()
+    public static IServiceCollection AddServiceDependency(this IServiceCollection services)
     {
         return new ServiceCollection()
             .AddScoped<ICityService, CityService>()

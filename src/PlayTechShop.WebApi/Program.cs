@@ -1,6 +1,8 @@
 using PlayTechShop.CrossCutting.DependencyInjection.DbConfig;
-using PlayTechShop.CrossCutting.DependencyInjection.Repository.;
 using PlayTechShop.CrossCutting.DependencyInjection.Validation;
+using PlayTechShop.CrossCutting.DependencyInjection.Repository;
+using PlayTechShop.CrossCutting.DependencyInjection.Service;
+using PlayTechShop.CrossCutting.DependencyInjection.AutoMapper.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 

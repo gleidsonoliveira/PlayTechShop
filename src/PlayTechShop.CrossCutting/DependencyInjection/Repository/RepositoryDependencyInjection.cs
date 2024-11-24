@@ -5,7 +5,7 @@ using PlayTechShop.Domain.Interface.Repository;
 namespace PlayTechShop.CrossCutting.DependencyInjection.Repository;
 public static class RepositoryDependencyInjection
 {
-    public static IServiceCollection AddSqlRepositorydependency()
+    public static IServiceCollection AddSqlRepositorydependency(this IServiceCollection services)
     {
         return new ServiceCollection()
             .AddScoped<ICityRepository, CityRepository>()
