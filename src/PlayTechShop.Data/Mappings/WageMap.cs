@@ -24,19 +24,10 @@ public class WageMap : IEntityTypeConfiguration<Wage> {
 
         #endregion Default
 
-        builder.Property(u => u.NetSalary).HasMaxLength(5).IsRequired();
+        builder.Property(u => u.NetSalary).IsRequired();
 
-        builder.Property(u => u.Discount).HasMaxLength(10);
+        builder.Property(u => u.Discount);
 
-        builder.Property(u => u.GrossSalary).HasMaxLength(10).IsRequired();
-
-        //Relacionamento
-       // builder.HasOne(o => o.Employee).WithMany(c => c.Clients).HasForeignKey(c => c.EmployeeId);
-
-
-
-
-
+        builder.Property(u => u.GrossSalary).IsRequired();
     }
 }
-

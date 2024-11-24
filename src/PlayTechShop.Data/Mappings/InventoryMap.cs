@@ -24,23 +24,23 @@ namespace PlayTechShop.Data.Mappings;
 
         #endregion Default
 
-        builder.Property(u => u.Description).HasMaxLength(50).IsRequired();
+        builder.Property(u => u.Description).HasMaxLength(100).IsRequired();
 
-        builder.Property(u => u.Weight).HasMaxLength(10);
+        builder.Property(u => u.Weight);
 
-        builder.Property(u => u.QuantityOfPieces).HasMaxLength(5).IsRequired();
+        builder.Property(u => u.QuantityOfPieces).IsRequired();
 
-        builder.Property(u => u.MaximumQuantity).HasMaxLength(5).IsRequired();
+        builder.Property(u => u.MaximumQuantity).IsRequired();
 
-        builder.Property(u => u.MinimumQuantity).HasMaxLength(5).IsRequired();
+        builder.Property(u => u.MinimumQuantity).IsRequired();
 
-        builder.Property(u => u.CurrentQuantity).HasMaxLength(5).IsRequired();
+        builder.Property(u => u.CurrentQuantity).IsRequired();
 
         builder.Property(u => u.Category).HasMaxLength(10).IsRequired();
 
         builder.Property(u => u.Status).HasMaxLength(8).IsRequired();
 
-        builder.Property(u => u.Observation).HasMaxLength(10);
+        builder.Property(u => u.Observation).HasMaxLength(2000);
 
         builder.Property(u => u.EntryDate).IsRequired();
 
