@@ -24,19 +24,19 @@ public class EmployeeMap : IEntityTypeConfiguration<Employee> {
 
         #endregion Default
 
-        builder.Property(u => u.Name).HasMaxLength(50).IsRequired();
+        builder.Property(u => u.Name).HasMaxLength(100).IsRequired();
 
-        builder.Property(u => u.Cpf).HasMaxLength(11).IsRequired();
+        builder.Property(u => u.Cpf).HasMaxLength(15).IsRequired();
 
         builder.Property(u => u.DateBirth).IsRequired();
 
-        builder.Property(u => u.Address).HasMaxLength(50).IsRequired();
+        builder.Property(u => u.Address).HasMaxLength(80).IsRequired();
 
-        builder.Property(u => u.Number).HasMaxLength(4).IsRequired();
+        builder.Property(u => u.Number).HasMaxLength(8).IsRequired();
 
-        builder.Property(u => u.Complement).HasMaxLength(20).IsRequired();
+        builder.Property(u => u.Complement).HasMaxLength(60).IsRequired();
 
-        builder.Property(u => u.Neighborhood).HasMaxLength(20).IsRequired();
+        builder.Property(u => u.Neighborhood).HasMaxLength(60).IsRequired();
 
         builder.Property(u => u.ZipCode).HasMaxLength(9).IsRequired();
 
@@ -44,13 +44,13 @@ public class EmployeeMap : IEntityTypeConfiguration<Employee> {
 
         builder.Property(u => u.PhoneSecond).HasMaxLength(14).IsRequired();
 
-        builder.Property(u => u.Email).HasMaxLength(100).IsRequired();
+        builder.Property(u => u.Email).HasMaxLength(80).IsRequired();
 
         builder.Property(u => u.HireDate).HasMaxLength(8).IsRequired();
 
         builder.Property(u => u.JobPosition).HasMaxLength(15).IsRequired();
 
-        builder.Property(u => u.Neighborhood).HasMaxLength(20).IsRequired();
+        builder.Property(u => u.Neighborhood).HasMaxLength(60).IsRequired();
 
         //Relacionamento
 

@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PlayTechShop.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlayTechShop.Data.Mappings;
 public class StokeMap : IEntityTypeConfiguration<Inventory>
@@ -29,14 +24,13 @@ public class StokeMap : IEntityTypeConfiguration<Inventory>
         builder.ToTable("Inventory");
         builder.HasKey(c => c.Id);
         builder.Property(c => c.Description).IsRequired().HasMaxLength(100);
-        builder.Property(u => u.Weight).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.QuantityOfPieces).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.MinimumQuantity).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.MaximumQuantity).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.CurrentQuantity).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.Category).IsRequired().HasMaxLength(15);
-        builder.Property(u => u.Status).IsRequired().HasMaxLength(15);
-        builder.Property(u => u.Observation).HasMaxLength(100);
-
+        builder.Property(u => u.Weight).IsRequired();
+        builder.Property(u => u.QuantityOfPieces).IsRequired();
+        builder.Property(u => u.MinimumQuantity).IsRequired();
+        builder.Property(u => u.MaximumQuantity).IsRequired();
+        builder.Property(u => u.CurrentQuantity).IsRequired();
+        builder.Property(u => u.Category).IsRequired();
+        builder.Property(u => u.Status).HasMaxLength(15);
+        builder.Property(u => u.Observation).HasMaxLength(2000);
     }
 }

@@ -30,19 +30,19 @@ public class CompanyMap : IEntityTypeConfiguration<Company>
         builder.HasKey(c => c.Id);
         builder.Property(c => c.Name).IsRequired().HasMaxLength(100);
         builder.Property(u => u.ReasonSocial).IsRequired().HasMaxLength(100);
-        builder.Property(u => u.Cnpj).IsRequired().HasMaxLength(15);
-        builder.Property(u => u.Address).IsRequired().HasMaxLength(200);
-        builder.Property(u => u.AddressNeighborhood).IsRequired().HasMaxLength(80);
-        builder.Property(u => u.AdressNumber).HasMaxLength(15);
-        builder.Property(u => u.AddressComplement).HasMaxLength(20);
-        builder.Property(u => u.AddressZipCode).HasMaxLength(100).IsRequired();
-        builder.Property(u => u.CellPhone).HasMaxLength(15).IsRequired();
-        builder.Property(u => u.Telephone).HasMaxLength(15);
-        builder.Property(u => u.Email).HasMaxLength(20);
-        builder.Property(u => u.StateRegistration).HasMaxLength(50);
-        builder.Property(u => u.LegalResponsible).HasMaxLength(100);
-        builder.Property(u => u.NumberOfEmployees).IsRequired().HasMaxLength(20);
-        builder.Property(u => u.Observation).HasMaxLength(100);
+        builder.Property(u => u.Cnpj).IsRequired().HasMaxLength(18);
+        builder.Property(u => u.Address).IsRequired().HasMaxLength(60);
+        builder.Property(u => u.AddressNeighborhood).IsRequired().HasMaxLength(60);
+        builder.Property(u => u.AdressNumber).HasMaxLength(8);
+        builder.Property(u => u.AddressComplement).HasMaxLength(60);
+        builder.Property(u => u.AddressZipCode).HasMaxLength(9).IsRequired();
+        builder.Property(u => u.CellPhone).HasMaxLength(14).IsRequired();
+        builder.Property(u => u.Telephone).HasMaxLength(14);
+        builder.Property(u => u.Email).HasMaxLength(80);
+        builder.Property(u => u.StateRegistration).HasMaxLength(15);
+        builder.Property(u => u.LegalResponsible).HasMaxLength(15);
+        builder.Property(u => u.NumberOfEmployees).IsRequired();
+        builder.Property(u => u.Observation).HasMaxLength(2000);
 
 
     }

@@ -25,21 +25,21 @@ namespace PlayTechShop.Data.Mappings {
 
             #endregion Default
 
-            builder.Property(u => u.Name).HasMaxLength(50).IsRequired();
+            builder.Property(u => u.Name).HasMaxLength(100).IsRequired();
 
-            builder.Property(u => u.Cpf).HasMaxLength(18).IsRequired();
+            builder.Property(u => u.Cpf).HasMaxLength(15).IsRequired();
 
-            builder.Property(u => u.Address).HasMaxLength(50).IsRequired();
+            builder.Property(u => u.Address).HasMaxLength(80).IsRequired();
 
-            builder.Property(u => u.Number).HasMaxLength(5).IsRequired();
+            builder.Property(u => u.Number).HasMaxLength(8).IsRequired();
 
-            builder.Property(u => u.Complement).HasMaxLength(20);
+            builder.Property(u => u.Complement).HasMaxLength(60).IsRequired();
 
             builder.Property(u => u.ZipCode).HasMaxLength(9).IsRequired();
 
-            builder.Property(u => u.PhoneFirst).HasMaxLength(14).IsRequired();
+            builder.Property(u => u.PhoneFirst).HasMaxLength(14).IsRequired(); 
 
-            builder.Property(u => u.Email).HasMaxLength(320).IsRequired();
+            builder.Property(u => u.Email).HasMaxLength(80);
 
             //Relacionamento| Uma Cidade pode ter varios clientes, numero do ID da cidade
             builder.HasOne(o => o.City).WithMany(c => c.Clients).HasForeignKey(c => c.CityId);
