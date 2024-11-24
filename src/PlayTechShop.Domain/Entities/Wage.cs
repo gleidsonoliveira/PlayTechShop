@@ -1,5 +1,4 @@
 ﻿using PlayTechShop.Domain.Entities.Base;
-using PlayTechShop.Domain.Enum;
 
 namespace PlayTechShop.Domain.Entities;
 
@@ -8,15 +7,15 @@ public class Wage : EntityBase
     /// <summary>
     /// Salário Líquido
     /// </summary>
-    public double NetSalary { get; set; }
+    public decimal NetSalary { get; set; }
     /// <summary>
     /// Desconto
     /// </summary>
-    public double Discount { get; set; }
+    public decimal Discount { get; set; }
     /// <summary>
     /// Salario Bruto
     /// </summary>
-    public double GrossSalary { get; set; }
+    public decimal GrossSalary { get; set; }
 
     /// <summary>
     /// Relacionamento entre Wage e Employee

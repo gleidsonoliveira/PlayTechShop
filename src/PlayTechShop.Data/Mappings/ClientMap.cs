@@ -5,6 +5,7 @@ using PlayTechShop.Domain.Entities;
 namespace PlayTechShop.Data.Mappings {
     public class ClientMap : IEntityTypeConfiguration<Client> {
         public void Configure(EntityTypeBuilder<Client> builder) {
+
             builder.ToTable("Client");
 
             builder.HasKey(u => u.Id);
@@ -27,7 +28,7 @@ namespace PlayTechShop.Data.Mappings {
 
             builder.Property(u => u.Name).HasMaxLength(100).IsRequired();
 
-            builder.Property(u => u.Cpf).HasMaxLength(15).IsRequired();
+            builder.Property(u => u.Cpf).HasMaxLength(15).IsRequired().IsUnicode();
 
             builder.Property(u => u.Address).HasMaxLength(80).IsRequired();
 
