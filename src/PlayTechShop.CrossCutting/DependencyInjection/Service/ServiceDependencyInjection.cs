@@ -11,9 +11,8 @@ public static class ServiceDependencyInjection
             .AddScoped<ICityService, CityService>()
             .AddScoped<ICompanyService, CompanyService>()
             .AddScoped<IInventoryService, InventoryService>()
-             .AddScoped<IClientService, ClientService>();
-
-
-        //.AddScoped<IStateService, StateService>();
+            .AddScoped<IClientService, ClientService>()
+            .AddScoped<IProductService, ProductService>()
+            .AddScoped<ICategoryService, CategoryService>();
     }
 }

@@ -1,5 +1,5 @@
-﻿namespace PlayTechShop.Domain.Entities.Dtos.City;
-public class CityUpdateRequestDto
+﻿namespace PlayTechShop.Domain.Entities.Dtos;
+public class CityInsertRequestDto
 {
     public string Name { get; set; }
     public string CodeCity { get; set; }

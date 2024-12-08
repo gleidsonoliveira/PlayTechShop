@@ -10,6 +10,8 @@ public static class ValidatorsDependencyInjection
         services.AddScoped<IValidator<City>, CityValidator>();
         services.AddScoped<IValidator<State>, StateValidator>();
         services.AddScoped<IValidator<Client>, ClientValidator>();
+        services.AddScoped<IValidator<Product>, ProductValidator>();
+        services.AddScoped<IValidator<Category>, CategoryValidator>();
         return services;
     }
 }
