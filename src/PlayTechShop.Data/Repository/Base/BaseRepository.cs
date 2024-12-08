@@ -144,6 +144,4 @@ public abstract class BaseRepository<TEntity> : IRepositoryBase<TEntity> where T
         DbSet.UpdateRange(updateEntities);
         await _vPlayTechContext.SaveChangesAsync();
     }
-
-
 }
