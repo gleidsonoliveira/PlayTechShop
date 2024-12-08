@@ -1,4 +1,6 @@
-﻿using System.Linq.Expressions;
+﻿using FluentValidation.Results;
+using PlayTechShop.Domain.Entities;
+using System.Linq.Expressions;
 
 namespace PlayTechShop.Domain.Interface.Service.Base;
 public interface IServiceBase<TEntity> where TEntity : class
@@ -12,4 +14,5 @@ public interface IServiceBase<TEntity> where TEntity : class
     Task<TEntity> DeleteAsync(long Id);
     Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate);
     Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> predicate);
+    Task<List<ValidationFailure>> Validate(TEntity entity);
 }

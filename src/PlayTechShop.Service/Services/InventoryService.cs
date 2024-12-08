@@ -1,4 +1,5 @@
-﻿using PlayTechShop.Domain.Entities;
+﻿using FluentValidation.Results;
+using PlayTechShop.Domain.Entities;
 using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
 using System.Linq.Expressions;
@@ -56,6 +57,11 @@ namespace PlayTechShop.Service.Services
         public async Task UpdateRangeAsync(IEnumerable<Inventory> entity)
         {
             await _repository.UpdateRangeAsync(entity);
+        }
+
+        public Task<List<ValidationFailure>> Validate(Inventory entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

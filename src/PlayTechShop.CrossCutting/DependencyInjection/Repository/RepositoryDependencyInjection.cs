@@ -11,9 +11,10 @@ public static class RepositoryDependencyInjection
             .AddScoped<ICityRepository, CityRepository>()
             .AddScoped<ICompanyRepository, CompanyRepository>()
             .AddScoped<IInventoryRepository, InventoryRepository>()
-            .AddScoped<IClientRepository, ClientRepository>();
+            .AddScoped<IClientRepository, ClientRepository>()
+            .AddScoped<IProductRepository, ProductRepository>()
+            .AddScoped<ICategoryRepository, CategoryRepository>();
 
         //.AddScoped<IStateRepository, StateRepository>();
-
     }
 }

@@ -1,12 +1,11 @@
 ﻿using PlayTechShop.Domain.Entities.Base;
 
 namespace PlayTechShop.Domain.Entities;
-
+/// <summary>
+/// Salário Líquido
+/// </summary>
 public class Wage : EntityBase
 {
-    /// <summary>
-    /// Salário Líquido
-    /// </summary>
     public decimal NetSalary { get; set; }
     /// <summary>
     /// Desconto

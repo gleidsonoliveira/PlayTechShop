@@ -1,12 +1,8 @@
-﻿using PlayTechShop.Domain.Entities;
+﻿using FluentValidation.Results;
+using PlayTechShop.Domain.Entities;
 using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlayTechShop.Service.Services;
 public class CityService : ICityService
@@ -67,5 +63,10 @@ public class CityService : ICityService
     public async Task UpdateRangeAsync(IEnumerable<City> entity)
     {
         await _repository.UpdateRangeAsync(entity);
+    }
+
+    public Task<List<ValidationFailure>> Validate(City entity)
+    {
+        throw new NotImplementedException();
     }
 }

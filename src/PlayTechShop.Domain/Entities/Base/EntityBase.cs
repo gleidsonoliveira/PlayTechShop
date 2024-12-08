@@ -11,5 +11,4 @@ public class EntityBase
     public string UserIdModified { get; set; } = string.Empty;
     public DateTime? DateDeleted { get; set; }
     public string UserIdDeleted { get; set; } = string.Empty;
-
 }

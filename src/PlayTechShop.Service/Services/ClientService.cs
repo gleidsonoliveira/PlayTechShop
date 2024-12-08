@@ -22,7 +22,7 @@ public class ClientService : IClientService
     {
         _ = entity ?? throw new ArgumentNullException(nameof(entity));
 
-        var listErrors = await ValidateClient(entity);
+        var listErrors = await Validate(entity);
 
         if (listErrors.Any())
             throw new ValidationException(listErrors);
@@ -73,7 +73,7 @@ public class ClientService : IClientService
         await _repository.UpdateRangeAsync(entity);
     }
 
-    public async Task<List<ValidationFailure>> ValidateClient(Client entity)
+    public async Task<List<ValidationFailure>> Validate(Client entity)
     {
         var listErrors = new List<ValidationFailure>();
 

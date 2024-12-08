@@ -10,7 +10,7 @@ public class PlayTechContext : DbContext
     /// <summary>
     /// Representação das tabelas
     /// </summary>
-    
+
     public DbSet<State> State { get; set; }
     public DbSet<City> City { get; set; }
     public DbSet<Client> Client { get; set; }
@@ -18,6 +18,8 @@ public class PlayTechContext : DbContext
     public DbSet<Employee> Employee { get; set; }
     public DbSet<Inventory> Stoke { get; set; }
     public DbSet<Wage> Wage { get; set; }
+    public DbSet<Category> Category { get; set; }
+    public DbSet<Product> Product { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

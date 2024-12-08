@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using PlayTechShop.Domain.Entities;
-using PlayTechShop.Domain.Entities.Dtos.City;
+using PlayTechShop.Domain.Entities.Dtos;
 
 namespace PlayTechShop.CrossCutting.DependencyInjection.AutoMapper;
 public class MappingProfile : Profile
@@ -9,5 +9,11 @@ public class MappingProfile : Profile
     {
         CreateMap<City, CityInsertRequestDto>().ReverseMap();
         CreateMap<City, CityUpdateRequestDto>().ReverseMap();
+
+        CreateMap<Category, CategoryInsertRequestDto>().ReverseMap();
+        CreateMap<Category, CategoryUpdateRequestDto>().ReverseMap();
+
+        CreateMap<Product, ProductInsertRequestDto>().ReverseMap();
+        CreateMap<Product, ProductUpdateRequestDto>().ReverseMap();
     }
 }
