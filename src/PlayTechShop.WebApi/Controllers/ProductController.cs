@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PlayTechShop.Domain.Entities.Dtos;
 using PlayTechShop.Domain.Interface.Service;
 
 namespace PlayTechShop.WebApi.Controllers;
@@ -9,8 +10,7 @@ public class ProductController : Controller
     {
         _productService = productService;
     }
-    public IActionResult Index()
-    {
-        return View();
-    }
+
+
+    
 }
