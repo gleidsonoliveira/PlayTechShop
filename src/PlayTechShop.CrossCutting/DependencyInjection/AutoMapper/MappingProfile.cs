@@ -10,8 +10,11 @@ public class MappingProfile : Profile
         CreateMap<City, CityInsertRequestDto>().ReverseMap();
         CreateMap<City, CityUpdateRequestDto>().ReverseMap();
 
-        CreateMap<Category, CategoryInsertRequestDto>().ReverseMap();
+        #region Category
+        CreateMap<Category, CategoryRequestInsertDto>().ReverseMap();
         CreateMap<Category, CategoryUpdateRequestDto>().ReverseMap();
+        CreateMap<Category, CategoryFormResponseDto>().ReverseMap(); 
+        #endregion
 
         CreateMap<Product, ProductInsertRequestDto>().ReverseMap();
         CreateMap<Product, ProductUpdateRequestDto>().ReverseMap();

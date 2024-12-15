@@ -7,14 +7,17 @@ public static class RepositoryDependencyInjection
 {
     public static IServiceCollection AddSqlRepositorydependency(this IServiceCollection services)
     {
-        return new ServiceCollection()
-            .AddScoped<ICityRepository, CityRepository>()
-            .AddScoped<ICompanyRepository, CompanyRepository>()
-            .AddScoped<IInventoryRepository, InventoryRepository>()
-            .AddScoped<IClientRepository, ClientRepository>()
-            .AddScoped<IProductRepository, ProductRepository>()
-            .AddScoped<ICategoryRepository, CategoryRepository>();
+        //return new ServiceCollection()
+        //    .AddScoped<ICityRepository, CityRepository>()
+        //    .AddScoped<ICompanyRepository, CompanyRepository>()
+        //    .AddScoped<IInventoryRepository, InventoryRepository>()
+        //    .AddScoped<IClientRepository, ClientRepository>()
+        //    .AddScoped<IProductRepository, ProductRepository>()
+        //    .AddScoped<ICategoryRepository, CategoryRepository>();
 
         //.AddScoped<IStateRepository, StateRepository>();
+
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        return services;
     }
 }
