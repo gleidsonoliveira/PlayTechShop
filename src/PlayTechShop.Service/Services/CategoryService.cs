@@ -4,7 +4,6 @@ using PlayTechShop.Domain.Entities;
 using PlayTechShop.Domain.Enum;
 using PlayTechShop.Domain.Interface.Repository;
 using PlayTechShop.Domain.Interface.Service;
-using PlayTechShop.Shared.Helpers;
 using System.Linq.Expressions;
 
 namespace PlayTechShop.Service.Services;
@@ -78,7 +77,7 @@ public class CategoryService : ICategoryService
         if (!validation.IsValid)
             listErrors.AddRange(validation.Errors);
 
-        var isValidateEmail = await GetAsync(x => x.Description.RemoveSpace() == entity.Description.RemoveSpace() && x.Situation == Situation.Active || x.Description.RemoveSpace() == entity.Description.RemoveSpace() && x.Situation == Situation.Inactive);
+        var isValidateEmail = await GetAsync(x => x.Description == entity.Description.Trim() && x.Situation == Situation.Active || x.Description == entity.Description.Trim() && x.Situation == Situation.Inactive);
         if (isValidateEmail is { } && isValidateEmail.Id > 0)
             listErrors.Add(new ValidationFailure("Categoria", $"Já existe uma descrição {(isValidateEmail.Situation == Situation.Active ? " ativa " : " inativa ")} cadastrada para essa categoria."));
 
